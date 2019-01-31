@@ -1,0 +1,20 @@
+---
+### VagrantCloudのOSイメージを落としてプロビジョニング(AmazonLinux2)
+# https://app.vagrantup.com/suzukishouten/boxes/amznlinux2
+vagrant_box: "centos/7"
+vagrant_box_version: 1804.02
+
+# 仮想マシン名
+vagrant_hostname: centos7
+
+# 仮想マシンのIPアドレス
+vagrant_ip: 192.168.33.13
+
+# ホストマシンと仮想マシンのフォルダ共有
+vagrant_synced_folder:
+  local_path: .
+  destination: /var/share/
+
+# メモリとCPUの設定
+vagrant_memory: 613
+vagrant_cpus: 1
